@@ -1,0 +1,18 @@
+.heroImg{
+    margin-bottom: 10px;
+}
+
+.heroAvatar{
+    display: flex;
+    height: 200px;
+    width: 180px;
+    margin: 0 auto 10px ;
+    background-color: rgb(226, 226, 226);
+    border-radius: 4px;
+
+    box-shadow:   inset 0 1.5px 10px green,
+    inset 0 12.3px 17.9px purple, inset 0 41.8px 33.4px orange, inset 0 100px 80px teal;
+
+    justify-content: center;
+    align-items: center;
+}

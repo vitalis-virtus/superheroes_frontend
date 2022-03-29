@@ -1,0 +1,41 @@
+.heroList{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+
+}
+
+.heroListItem{
+    background-color: #fff;
+    transition: 250ms ease-in-out;
+    animation-name: toTop;
+    animation-duration: 2s;
+
+    display: block;
+    width: 200px;
+    min-height: 200px;
+    padding: 5px;
+    background-color: rgba(123, 123, 255, 0.233);
+
+    border-radius: 5px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+  
+}
+
+@keyframes toTop{
+    0%  {transform: translateY(30px);}
+    10%  {transform: translateY(0);} 
+}
+
+.heroListItem:not(:last-child){
+    margin-right: 10px;
+}
+
+.heroListItem:hover{
+    transition: 250ms ease-in-out;
+    transform: scale(1.05);
+}
